@@ -1,0 +1,20 @@
+{
+  "platforms": {
+    "xuexitong": {
+      "enabled": true,
+      "auto_sync": true,
+      "sync_interval": 3600,
+      "credentials": {
+        "username": "17778648798",
+        "password": "XXTzht040926"
+      }
+    },
+    "touge": {
+      "enabled": true,
+      "auto_sync": true,
+      "sync_interval": 3600,
+      "credentials": null
+    }
+  },
+  "last_sync": "2026-03-05T21:55:19.414216"
+}

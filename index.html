@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任务管理系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 任务管理系统</h1>
+            <p>管理您的日常任务，提醒您完成目标</p>
+        </header>
+
+        <main>
+<!--            <section class="task-input">-->
+<!--                <h2>添加新任务</h2>-->
+<!--                <form id="taskForm">-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="taskTitle">任务标题</label>-->
+<!--                        <input type="text" id="taskTitle" placeholder="输入任务标题..." required>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="taskDescription">任务描述</label>-->
+<!--                        <textarea id="taskDescription" placeholder="输入任务描述..."></textarea>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="taskPriority">优先级</label>-->
+<!--                        <select id="taskPriority">-->
+<!--                            <option value="low">低</option>-->
+<!--                            <option value="medium" selected>中</option>-->
+<!--                            <option value="high">高</option>-->
+<!--                        </select>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="taskDeadline">截止时间</label>-->
+<!--                        <input type="datetime-local" id="taskDeadline">-->
+<!--                    </div>-->
+<!--                    <button type="submit">添加任务</button>-->
+<!--                </form>-->
+<!--            </section>-->
+
+            <section class="platform-sync">
+                <h2>🔄 平台任务同步</h2>
+                <p style="text-align: center; margin-bottom: 20px; opacity: 0.9;">
+                    系统将自动从学习通和头歌获取您的未完成任务
+                </p>
+                <div class="sync-controls">
+                    <button id="syncAllBtn" class="sync-btn">立即同步所有平台</button>
+                    <button id="syncXuexitongBtn" class="sync-btn">同步学习通</button>
+                    <button id="syncTougeBtn" class="sync-btn">同步头歌</button>
+                </div>
+                
+                <div class="platform-status" id="platformStatus">
+                    <h3>平台状态</h3>
+                    <div id="statusContent">
+                        <!-- 平台状态将在这里显示 -->
+                    </div>
+                </div>
+
+                <div class="credentials-section">
+                    <h3>平台凭据设置</h3>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 15px;">
+                        配置您的学习平台账号密码以自动获取任务
+                    </p>
+                    <div class="credential-forms">
+                        <div class="credential-form">
+                            <h4>学习通</h4>
+                            <input type="text" id="xuexitongUsername" placeholder="学号/用户名">
+                            <input type="password" id="xuexitongPassword" placeholder="密码">
+                            <button onclick="saveCredentials('xuexitong')">保存凭据</button>
+                        </div>
+                        <div class="credential-form">
+                            <h4>头歌</h4>
+                            <input type="text" id="tougeUsername" placeholder="用户名/邮箱">
+                            <input type="password" id="tougePassword" placeholder="密码">
+                            <button onclick="saveCredentials('touge')">保存凭据</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="task-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="pending">待完成</button>
+                <button class="filter-btn" data-filter="completed">已完成</button>
+            </section>
+
+            <section class="task-list">
+                <h2>任务列表</h2>
+                <div id="taskContainer">
+                    <!-- 任务将在这里动态生成 -->
+                </div>
+            </section>
+
+            <section class="statistics">
+                <h2>统计信息</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>总任务数</h3>
+                        <span id="totalTasks">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>已完成</h3>
+                        <span id="completedTasks">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>待完成</h3>
+                        <span id="pendingTasks">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>完成率</h3>
+                        <span id="completionRate">0%</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- 提醒弹窗 -->
+    <div id="notification" class="notification">
+        <div class="notification-content">
+            <h3 id="notificationTitle">提醒</h3>
+            <p id="notificationMessage">消息内容</p>
+            <button onclick="closeNotification()">确定</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

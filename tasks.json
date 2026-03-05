@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1772718912923,
+    "title": "Web开发实训 - HTML/CSS",
+    "description": "完成个人主页的HTML和CSS布局",
+    "priority": "low",
+    "deadline": "2026-03-11T21:55:12.923586",
+    "completed": false,
+    "created_at": "2026-03-05T21:55:12.923586",
+    "platform": "头歌",
+    "url": "https://www.educoder.net/tasks/890123",
+    "course": "Web前端开发"
+  },
+  {
+    "id": 1772718349184,
+    "title": "Web开发实训 - HTML/CSS",
+    "description": "完成个人主页的HTML和CSS布局",
+    "priority": "low",
+    "deadline": "2026-03-11T21:45:49.182927",
+    "completed": true,
+    "created_at": "2026-03-05T21:45:49.184287",
+    "platform": "头歌",
+    "url": "https://www.educoder.net/tasks/890123",
+    "course": "Web前端开发",
+    "completed_at": "2026-03-05T21:47:02.297979"
+  },
+  {
+    "id": 1772718349184,
+    "title": "数据结构实验 - 链表操作",
+    "description": "实现单链表的基本操作：插入、删除、查找",
+    "priority": "high",
+    "deadline": "2026-03-09T21:45:49.182927",
+    "completed": false,
+    "created_at": "2026-03-05T21:45:49.184287",
+    "platform": "头歌",
+    "url": "https://www.educoder.net/tasks/234567",
+    "course": "数据结构与算法"
+  },
+  {
+    "id": 1772718349184,
+    "title": "Python基础练习 - 循环结构",
+    "description": "完成Python循环结构相关编程练习",
+    "priority": "medium",
+    "deadline": "2026-03-07T21:45:49.182927",
+    "completed": false,
+    "created_at": "2026-03-05T21:45:49.184287",
+    "platform": "头歌",
+    "url": "https://www.educoder.net/tasks/456789",
+    "course": "Python编程基础"
+  },
+  {
+    "id": 1772718349184,
+    "title": "《操作系统》视频观看",
+    "description": "观看第五章进程管理视频课程",
+    "priority": "medium",
+    "deadline": "2026-03-10T21:45:49.182927",
+    "completed": false,
+    "created_at": "2026-03-05T21:45:49.184287",
+    "platform": "学习通",
+    "url": "https://study.chaoxing.com/video/345678",
+    "course": "操作系统"
+  },
+  {
+    "id": 1772718349182,
+    "title": "《数据结构》期中考试",
+    "description": "线上期中考试，涵盖前五章内容",
+    "priority": "high",
+    "deadline": "2026-03-12T21:45:49.182927",
+    "completed": false,
+    "created_at": "2026-03-05T21:45:49.182927",
+    "platform": "学习通",
+    "url": "https://study.chaoxing.com/exam/789012",
+    "course": "数据结构"
+  },
+  {
+    "id": 1772718349182,
+    "title": "《计算机网络》第三章作业",
+    "description": "完成第三章课后习题1-10题",
+    "priority": "high",
+    "deadline": "2026-03-08T21:45:49.182927",
+    "completed": false,
+    "created_at": "2026-03-05T21:45:49.182927",
+    "platform": "学习通",
+    "url": "https://study.chaoxing.com/course/123456",
+    "course": "计算机网络"
+  }
+]
